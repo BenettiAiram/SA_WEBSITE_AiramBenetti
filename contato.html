@@ -7,7 +7,7 @@
     <title>PixelForge Studios - Home</title>
     <link rel="icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jXEb9OT9epLQiL3EHLzn1s038LUbAIYNRg&s" />
-    <!-- importação Google Icons --><!-- VEM PRIMEIRO -->
+    <!-- importação Google Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!-- importação do Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -20,14 +20,14 @@
 
 <body class="bg-body-tertiary container-md">
     <!-- Cabeçalho da página -->
-    <header>
+    <header class="position-sticky top-0 bg-body-tertiary">
         </u>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fs-4">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <h1><b class="text-warning">PixelForge</b> <b>Studios</b></h1>
+                    <h1><b class="text-warning"><span
+                                class="material-symbols-outlined">deployed_code</span>PixelForge</b><b>Studios</b></h1>
                 </a>
-                <!-- <h2>Onde a criatividade encontra a gameplay.</h2> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,15 +36,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">
+                                <span class="material-symbols-outlined">home</span>
+                                Home
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./biblioteca.html">Acervo</a>
+                            <a class="nav-link active" href="./biblioteca.html">
+                                <span class="material-symbols-outlined">book_2</span>
+                                Biblioteca
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./contato.html">Contato</a>
+                            <a class="nav-link active" href="./contato.html">
+                                <span class="material-symbols-outlined">phone_enabled</span>
+                                <u>Contato</u>
+                            </a>
                         </li>
                     </ul>
+                    <span class="material-symbols-outlined">search</span>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -52,24 +62,72 @@
                 </div>
             </div>
         </nav>
+        <h5 class="mx-4">Onde a criatividade encontra a gameplay</h5><br>
     </header>
+    <br><br>
 
     <!-- Conteúdo principal da página -->
-    <hr>
-    <main></main>
-        
+    <main class="container">
+        <div class="bg-white m-2 p-3 rounded-circle">
+            <div class="mb-3 row">
+                <label for="inputNome" class="col-sm-2 col-form-label">Nome</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputNome" value="">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail" value="email@example.com">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label disabled">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputTelefone" class="col-sm-2 col-form-label">Telefone</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputTelefone" value="">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputAssunto" class="col-sm-2 col-form-label">Assunto</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputAssunto" value="">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputMensagem" class="col-sm-2 col-form-label">Mensagem</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="inputMensagem" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="align-content-end">
+                <button class="btn btn-success d-flex" type="submit">
+                    Enviar
+                    <span class="material-symbols-outlined">arrow_shape_up_stack_2</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <br><br>
 
     <!-- Rodapé da página -->
-    <hr>
     <footer class="text-center">
-        <p>Email: pixelforgestudios@gmail.com &nbsp;&nbsp;&nbsp; Contato: 27 99642-5162 &nbsp;&nbsp;&nbsp; 2026</p>
+        <p>
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+            Email: pixelforgestudios@gmail.com &nbsp;&nbsp;&nbsp; Contato: 27 99642-5162 &nbsp;&nbsp;&nbsp; 2026
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+        </p>
     </footer>
 
     <!-- Importação do JavaScript do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
